@@ -1,0 +1,20 @@
+data:
+  data_path: /data/dataset/flickr8k
+  img_size: 224
+  max_cap_len: 50
+  batch_size: 128
+model:
+  img_encoder:
+    lr: 1e-4
+    trainable: true
+    embed_dim: 512
+    dropout: 0.1
+  text_encoder:
+    lr: 1e-5
+    trainable: true
+    embed_dim: 512
+    dropout: 0.1
+train:
+  max_epochs: 100
+  save_n_epoch: 20
+
